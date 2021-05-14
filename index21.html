@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pociocionamiento</title>
+    <style>
+      :root {
+        /* variables colors */
+        --color-spotyfy: #54e90b;
+        --color-tierra: #b2650f;
+        --color-red-sanguineo: #ff0000;
+        --color-amaranto: #e52b50;
+        --color-anato-bija: #ec2300;
+        --color-black-seat: #17100b;
+        --color-white-ligth: #ededed;
+        --color-yellow-believe: #eaba04;
+        --color-yellow-bomb: #dce303;
+        --color-blue-ligth: #3ba5f7;
+        --color-blue-bg: #03095e;
+        --color-blue-balayage: #323bbb;
+      }
+
+      .primera_seccion {
+        color: var(--color-red-sanguineo);
+        background-color: var(--color-yellow-believe);
+        width: 200px;
+        padding: 2em;
+        float: right;
+        opacity: 0.6;
+      }
+      .primera_seccion h1 {
+        font-size: 3rem;
+      }
+
+      .segunda_seccion {
+        color: var(--color-white-ligth);
+        background-color: var(--color-spotyfy);
+        width: 200px;
+        padding: 2em;
+        float: left;
+      }
+
+      .clear-float {
+        padding: 0.5em;
+        clear: both;
+        margin: 100px 200px;
+      }
+
+      .four_section {
+        background: var(--color-amaranto);
+        width: 200px;
+        padding: 2em;
+        position: relative;
+        left: 500px;
+        color: var(--color-blue-ligth);
+      }
+
+      /* posicion fija de contenedor */
+      .five_section {
+        background: var(--color-blue-ligth);
+        width: 1450px;
+        padding: 2em;
+        position: fixed;
+        top: 25px;
+        color: var(--color-blue-bg);
+        opacity: 0.4;
+      }
+      .six_section {
+        color: var(--color-spotyfy);
+        background-color: var(--color-white-ligth);
+        width: 200px;
+        padding: 2em;
+        position: relative;
+        left: 500px;
+      }
+      .six_section h2 {
+        font-size: 3rem;
+      }
+      /* posiciones de imagenes y texto uno a lado de otro */
+      .posicion_izq {
+        width: 500px;
+        height: 500px;
+        float: left;
+        padding: 10rem;
+        font-size: 2rem;
+      }
+
+      .posicion_der {
+        float: right;
+        width: 500px;
+        height: 500px;
+      }
+
+      .cuadrado_rojo {
+        background-color: var(--color-red-sanguineo);
+        border: 10px var(--color-yellow-bomb) dotted;
+      }
+
+      .cuadrado_azul {
+        background-color: var(--color-blue-balayage);
+        border-style: groove solid dotted dashed;
+        border-color: var(--color-spotyfy) var(--color-anato-bija) var(--color-yellow-bomb) var(--color-blue-balayage);
+        border-width: 20px 10px 5px 2px;
+      }
+
+      .cuadrado_verde {
+        background-color: var(--color-spotyfy);
+        border-radius: 50px;
+      }
+      .cuadrado {
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+        float: left;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="primera_seccion">
+      <h1>Soy un texto 1</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ut
+        ratione, officia, excepturi, est voluptates possimus molestiae unde
+        aperiam consectetur itaque! Neque nihil, nobis omnis culpa error
+        blanditiis rem asperiores.
+      </p>
+    </div>
+    <div class="segunda_seccion">
+      <p>
+        Texto 2:Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+        deserunt fugit aspernatur placeat cumque recusandae temporibus assumenda
+        accusamus dolorum. Quia sit hic optio ratione laboriosam ducimus, ipsum
+        enim possimus pariatur?
+      </p>
+    </div>
+    <p class="clear-float">
+      Texto 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptatem omnis ad ex unde! Nostrum, sapiente facere, corporis error
+      repellendus tempore hic maxime quidem minima, eligendi molestias dolorem
+      libero alias deserunt?
+    </p>
+    <hr />
+    <div class="four_section">
+      <h2>Cuarto texto</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus enim
+        aspernatur libero non repudiandae eaque sed nam, quidem quam dolorum,
+        qui quasi. Sunt ipsa adipisci, temporibus ducimus natus dolore dolores.
+      </p>
+    </div>
+    <div class="five_section">
+      <h2>Quinto texto</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid at
+        nemo ad ipsum perspiciatis autem error expedita. Optio necessitatibus
+        quo rerum quas, nihil deserunt commodi repellat dolorum inventore, neque
+        itaque.
+      </p>
+    </div>
+    <hr />
+    <div class="six_section">
+      <h2>Sexta seccion</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita in
+        labore quasi rerum quidem ex quam porro, odit modi exercitationem odio
+        cumque velit nulla cum quae. Velit quas numquam atque!
+      </p>
+    </div>
+    <hr />
+    <div>
+      <p class="posicion_izq">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        facere necessitatibus, praesentium ab sed labore esse voluptatem vero,
+        assumenda officiis, vitae earum fuga in a quia iusto sint impedit dolor?
+      </p>
+      <img class="posicion_der" src="http://placeimg.com/800/600/tech" alt="" />
+    </div>
+    <hr/>
+    <section>
+      <div class="cuadrado cuadrado_rojo"></div>
+      <div class="cuadrado cuadrado_azul"></div>
+      <div class="cuadrado cuadrado_verde"></div>
+    </section>
+  </body>
+</html>

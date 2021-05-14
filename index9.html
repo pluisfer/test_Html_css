@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aspect radio</title>
+    <style>
+        body{
+            margin: 1em;
+        }
+
+        /* pseudoelemento para videos de youtube */
+        .box{
+            /* width: 400px; */
+            background: red;
+        }
+        .box::before{
+           content: ""; 
+           display:block;
+           padding-bottom: 56.25%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

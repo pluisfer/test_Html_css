@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>script de java</title>
+	<style>
+		p{
+			background: hsl(190, 100%, 50%);
+			width: 200px;
+			border: 1px solid silver;
+		}
+	</style>
+	</head>
+<body>
+	<h2>Cambiar texto del parrafo</h2>
+	<p id="texto">Necesitamos avanzar en este proceso de aprendizaje</p>
+	<button id="boton-change">Try it</button>
+	<h2>Adicionar texto al existente</h2>
+	<p id="texto2">Javascript es...</p>
+	<button id="boton-change2">Try it</button>
+	<h2>Crear un parrafo</h2>
+	<p id="vacio"></p>
+	<button id="crear-parrafo">try it</button>
+
+
+
+
+	<script>
+		/*document.getElementById("texto").innerHTML = "Hola luis fernando";
+		alert("hola bienvenido a mi mundo");*/
+
+		document.getElementById("boton-change"). onclick = 
+		function()
+			{
+				/*Esta funcion sirve para cambiar el texto del la eqtiquetap*/
+				document.getElementById("texto").innerHTML = "Hola Luis fernando";
+			}
+
+		document.getElementById("boton-change2"). onclick = 
+		function()
+			{
+				document.getElementById("texto2"). innerHTML = document.getElementById("texto2").innerHTML + "Increible";
+			}
+		document.getElementById("crear-parrafo"). onclick = 
+		function()
+			{
+				document.getElementById("vacio").innerHTML = "<h1>Bienvenido a Javascript</h1>";
+				document.getElementById("vacio").style.backgroundColor = "yellow";
+			}
+
+	</script>
+</body>
+</html>

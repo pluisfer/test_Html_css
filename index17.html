@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript variables</title>
+</head>
+<body>
+    <input id="user-input" type="text" placeholder="Usuario">
+    <p id="texto"> Inicia seccion</p>
+    <button id="show-message">Login</button>
+
+
+
+    <script>
+        document.getElementById("show-message").onclick = function () {
+            var inputtext= "";
+            inputtext = document.getElementById("user-input").value;
+            document.getElementById("texto").innerHTML = "<h1>Bienvenido !!</h1>"+inputtext;
+        }
+    </script>
+</body>
+</html>

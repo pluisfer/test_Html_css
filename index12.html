@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu desplegable</title>
+	<style>
+		*{margin:0;padding: 0;}
+
+		.menu
+		{
+			list-style: none;
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+			display: flex;
+			background: #333;
+		}
+
+		.submenu
+		{
+			position: absolute;
+			top: 100%;
+			display: none;
+		}
+		.submenu .submenu
+		{
+			left: 100%;
+			top: 0;
+		}
+
+		.menu-item
+		{
+			position: relative;
+		}
+
+		.menu-item:hover
+		{
+			background: rgba(0,0,0,.5);
+		}
+		.menu-item:hover > .submenu
+		{
+			display: block;
+		}
+
+		.menu-link
+		{
+			text-decoration: none;
+			color: #ddd;
+			display: block;
+			padding: .5em 1em;
+		}
+	</style>
+</head>
+<body>
+	<nav class="nav">
+		<ul class="menu">
+		<li class="menu-item">
+			<a class="menu-link" href="#">Nosotros</a></li>
+		<li class="menu-item"
+		><a class="menu-link" href="#">Profesores</a></li>
+		<li class="menu-item">
+			<a class="menu-link" href="#">Cursos</a>
+			<ul class="menu submenu">
+				<li class="menu-item">
+					<a class="menu-link" href="#">Programacion</a></li>
+				<li class="menu-item">
+					<a class="menu-link" href="#">Diseño</a></li>
+				<li class="menu-item">
+					<a class="menu-link" href="#">Emprendimiento</a>
+						<ul class="menu submenu">
+							<li class="menu-item"><a class="menu-link" href="">Gestion web</a></li>
+							<li class="menu-item"><a class="menu-link" href="">Taller de emprendimiento</a></li>
+						</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="menu-item">
+			<a class="menu-link" href="#">Blog</a></li>
+		<li class="menu-item">
+			<a class="menu-link" href="#">Suscribete</a></li>
+		</ul>
+	</nav>
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+*,
+*::after
+*::before  {box-sizing: border-box; }
+body{
+    margin: 0;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    color: green;
+    /* border-radius: 50%; */
+    background: hsl(10, 90%, 50%);
+    margin: 100px auto;
+    /* box-shadow: -6px -6px 40px rgba(0,0,0,.5) inset; 
+    para border radius sobra interna diseño */
+
+    /* box-shadow: 0px 0px 0px 10px blue,
+                0px 0px 0px 20px green,
+                0px 0px 0px 30px   yellow; */
+/* para sobras de box hacerle varios border */
+
+/* para hacer banderas */
+/* box-shadow: 0 100px 0 yellow inset,
+0 150px 0 blue inset, 0 200px 0 red inset; */
+
+box-shadow: 0 8px 10px -2px rgba(0,0,0,.8);
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
